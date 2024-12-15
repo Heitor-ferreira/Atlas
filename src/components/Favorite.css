@@ -1,0 +1,62 @@
+#return-button {
+    background-color: #ADD8E6;
+    color: white;
+    padding: 1rem 3rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+  
+  }
+  
+  #return-button:hover {
+    background-color: #add8e6d0;
+    border: none;
+  }
+  
+  .favorite{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    margin-bottom: 3rem;
+  
+  }
+  
+  .items{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+    h1{
+      font-family: "Playfair Display", serif;
+      font-size: 2.5rem;
+    }
+  }
+  
+  .favorite-list{
+    width: 100%;
+  
+    p{
+      font-size: 2rem;
+      text-align: center;
+      
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    .items{
+        width: 100%;
+    }
+
+    @media (max-width: 425px) {
+        .items{
+            width: 100%;
+        }
+    
+    }
+}

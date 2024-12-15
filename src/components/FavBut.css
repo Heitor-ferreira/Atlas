@@ -1,0 +1,25 @@
+.button-favorite {
+    background-color: #ADD8E6;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: '#000';
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .button-favorite:hover{
+    background-color: #add8e6d0;
+  }
+
+  @media (max-width: 768px) {
+    .button-favorite{
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .button-favorite{
+        padding: 0.5rem;
+    }
+}

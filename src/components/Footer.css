@@ -1,0 +1,144 @@
+.footer-conteiner {
+    background-color: #D3D3D3;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.footer-section {
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 1rem;
+        text-align: justify;
+        font-family: "Playfair Display", serif;
+        text-indent: 2rem;
+    }
+
+    h4 {
+        margin: 0;
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+    }
+
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        font-family: "Playfair Display", serif;
+    }
+
+    a:hover{
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #34495e;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 1440px) {
+    .footer-section {
+        p {
+            font-size: 0.8rem;
+        }
+
+        a{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        p {
+            font-size: 0.6rem;
+        }
+        h4{
+            font-size: 0.8rem;
+        }
+        a{
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-sections{
+        flex-direction: column;
+    }
+    .footer-section{
+        margin-top: 2rem;
+        border-top: 1px solid #34495e;
+    }
+
+    .footer-section {
+        p {
+            font-size: 1rem;
+        }
+        h4{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-sections{
+        flex-direction: column;
+    }
+    .footer-section{
+        margin-top: 1rem;
+    }
+    .footer-section {
+        p {
+            font-size: 0.8rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        a{
+            font-size: 0.8rem;
+        }
+    }
+}
+

@@ -1,0 +1,103 @@
+.search_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.search_box {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    transition: all 0.3s ease; /* Transição suave para todo o grupo */
+}
+
+.search_input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 0.125rem solid #ADD8E6;
+    border-radius: 0.5rem 0 0 0.5rem;
+    outline: none;
+    background-color: #f9f9f9; /* Cor inicial do fundo */
+    transition: all 0.3s ease;  /* Transição suave para o aumento do campo */
+    font-family: "Playfair Display", serif;
+}
+
+/* Quando o campo de pesquisa for focado */
+.search_input:focus {
+    width: 80%;  /* Aumenta o tamanho do campo de pesquisa */
+    background-color: #f9f9f9;  /* Muda a cor de fundo para azul */
+    border-color: #ADD8E6;  /* Muda a cor da borda */
+    font-size: 1.1rem;  /* Aumenta a fonte */
+}
+
+/* Quando o campo de pesquisa estiver focado, o botão também aumenta */
+.search_box:focus-within .search_clear {
+    font-size: 18px;  /* Aumenta o tamanho da fonte do botão */
+    padding: 12px 25px;  /* Aumenta o tamanho do botão */
+    background-color: #ADD8E6; /* Muda a cor de fundo do botão para preto */
+    color: white;  /* Garante que o texto do botão continue branco */
+    
+}
+
+/* Estilo para o botão de limpar */
+.search_clear {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ADD8E6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, font-size 0.3s, padding 0.3s; /* Transição para o aumento */
+}
+
+/* Efeito de hover no botão de limpar */
+.search_clear:hover {
+    background-color: #add8e6d0;
+    color: white;  /* Garante que o texto do botão seja branco */
+}
+
+@media (max-width: 768px) {
+    .search_input {
+        font-size: 0.8rem;
+    }
+
+    .search_input:focus{
+        font: 1rem;
+    }
+    .search_clear{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .search_input {
+        font-size: 0.6rem;
+    }
+
+    .search_input:focus{
+        font: 0.8rem;
+    }
+
+    .search_clear{
+        padding: 2.5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .search_box:focus-within .search_clear{
+        font-size: 1rem; 
+        padding: 6px 12.5px;
+        
+    }
+}
+
+@media (max-width: 320px) {
+
+    .search_clear{
+        padding: 1.25px 2.5px;
+    }
+}
